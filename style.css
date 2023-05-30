@@ -1,0 +1,166 @@
+body{
+
+    background-image: url(https://i.pinimg.com/originals/51/05/bd/5105bd5dc056f7c3283dd64b20fe4d0b.gif);
+    background-size: cover;
+    align-items: center;
+   /* background-repeat: no-repeat;*/
+   font-family: 'Courier New', Courier, monospace;
+ 
+
+   color: rgb(242, 248, 252);
+   float: left; /* Deja poner varios div uno al lado de otro*/ 
+   text-align: center;    
+   justify-content: center;
+   
+}
+
+.container-encript{
+    color: #fffcfc;
+
+}
+h2{
+    font-size: 15px;
+}
+h3{
+    font-size: 15px; 
+}
+
+#inputTexto{
+    background-color: #f1e5e589;
+    border: 0;
+    padding: 10px;
+    width: 400px;
+    height: 90px;
+    border-radius: 10px;
+    justify-content: center;
+    display: inline-block;
+    flex-flow: column wrap;
+}
+
+.boton-modal-cifrar{
+    padding: 20px;
+    display: inline-block;
+
+}
+.boton-modal-cifrar label{
+    padding: 10px 15px;
+    background-color: #0c000beb;
+    color: rgb(248, 243, 243);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease ;
+
+
+}
+.boton-modal-cifrar label:hover{
+    background-color: #410553; 
+}
+.boton-modal-descifrar{
+    padding: 20px;
+    display: inline-block;
+}
+.boton-modal-descifrar label{
+    padding: 10px 15px;
+   
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease ;
+
+}
+.boton-modal-descifrar label:hover{
+    background-color: #410553; 
+}
+
+/*ventana modal*/
+
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh ;
+    position: fixed;
+    top:0; left:0;
+    background-color: rgba(0, 8, 12, 0.788);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;   /*container del modal este sobre encima de todo*/
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #1e1a1ad7;
+    border-radius: 4px;
+
+}
+.content-modal h2{
+    margin-bottom: 15px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb; ;
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top:15px ;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #010a0f;
+    color: #fff; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover{
+    background-color: #410553;
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:_0; left: 0;
+    z-index: -1;
+
+}
+/*boton copiar*/
+.content-modal #btn-copiar{
+    width: auto;
+    margin-top:10px ;
+    display: inline;
+    padding-inline: 10px;
+}
+.content-modal #btn-copiar{
+    padding: 0;;
+    background-color: #010a0f;
+    color: #010a0f; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+#btn-copiar{
+    margin-top:10px ;
+    display: flex;
+}
+#btn-copiar label{
+    padding: 10px 10px;
+    background-color: #0c000beb;
+    color: rgb(248, 243, 243);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease ;
+    font: 'Courier New', Courier, monospace;
+
+}
+#btn-copiar label:hover{
+    background-color: #410553; 
+}

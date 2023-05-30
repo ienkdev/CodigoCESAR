@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <html lang="es">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Codigo Cesar</title>
+        <link rel="shorcut icon" href="https://i.pinimg.com/originals/ab/dc/aa/abdcaa395563fee65a329ad8bb192509.jpg">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="encabezado"></div>
+        <h1>SECRET CODE</h1>
+    <div class= "container-encript">
+        <h2>Ingrese el texto a Encriptar: </h2>
+        <input  id="inputTexto" type="text" name="container-encript">
+    </div>
+      <div class="container-clavesecreta">
+           <h3>Ingrese la clave secreta: </h3>
+        <input id="inputClave" type="text" name ="container container-clavesecreta">
+        <br><br>
+        </div>
+     
+        
+    <div class="boton-modal-cifrar" id="boton-cifrar">
+        <label for="btn-modal">
+            Cifrar
+        </label>
+    </div>
+    <div class="boton-modal-cifrar" id="boton-descifrar">
+        <label for="btn-modal">
+            Descrifrar
+        </label>
+    </div>
+
+    <footer>
+        <p>	© Todos los derechos reservados</p>
+    </footer>   
+
+    <input type="checkbox" id ="btn-modal">
+    <div class="container-modal">
+        <div class="content-modal">
+            <h2>RESULTADO</h2>
+            <p id="resultado"></p>
+            <div class="btn-cerrar">
+                <button id="btn-copiar">
+                    <label for="btn-copiar">Copiar</label>
+                </button>
+                <label for="btn-modal">Cerrar</label>
+                
+            </div>
+          
+            
+            
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+
+
+        
+        <script src="script.js"></script>
+</body>
+</html>
